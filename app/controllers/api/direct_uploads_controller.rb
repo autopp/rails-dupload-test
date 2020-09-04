@@ -1,5 +1,7 @@
 class Api::DirectUploadsController < ApplicationController
-  include EtagWithTemplateDigest
+  include ActiveStorage::SetCurrent
+
+  protect_from_forgery with: :null_session
 
   self.etag_with_template_digest = false
 
