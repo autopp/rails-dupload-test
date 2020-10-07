@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'aws-sdk-s3', require: false
-gem 'faraday'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,6 +43,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'solargraph'
+  gem 'faraday'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
